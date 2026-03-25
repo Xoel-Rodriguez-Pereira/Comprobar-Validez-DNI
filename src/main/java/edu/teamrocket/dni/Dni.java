@@ -6,7 +6,7 @@ class Dni {
     private Boolean numeroSano;
     private Boolean letraSana;
     private Boolean dniCifSano;
-    private Byte longitudDni;
+    private Byte longitudDni = 9;
 
 
     private TablaAsignacion tablaAsignacion = new TablaAsignacion();   

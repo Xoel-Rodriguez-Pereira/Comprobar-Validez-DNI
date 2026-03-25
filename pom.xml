@@ -52,7 +52,7 @@
             <archive>
               <manifest>
                 <addClasspath>true</addClasspath>
-                <mainClass>edu.teamrocket.gildedrose.App</mainClass>
+                <mainClass>edu.teamrocket.dni.App</mainClass>
               </manifest>
               <manifestEntries>
                 <url>${project.url}</url>
