@@ -6,7 +6,7 @@ class Dni {
     private Boolean numeroSano;
     private Boolean letraSana;
     private Boolean dniCifSano;
-    private Byte LONGITUD_DNI;
+    private Byte longitudDni;
 
 
     private TablaAsignacion tablaAsignacion = new TablaAsignacion();   
@@ -65,7 +65,7 @@ class Dni {
     }
 
     private Boolean checkLongitudDni() {
-        return getDni().length() == this.LONGITUD_DNI;
+        return getDni().length() == this.longitudDni;
     }
 
     public Boolean checkLetra() {
@@ -93,11 +93,11 @@ class Dni {
 
 
     public String extraerParteNumericaDni() {
-        return this.dni.substring(0, this.LONGITUD_DNI - 1);
+        return this.dni.substring(0, this.longitudDni - 1);
     }
 
     Character extraerParteAlfabeticaDni() {
-        return this.dni.charAt(this.LONGITUD_DNI - 1);
+        return this.dni.charAt(this.longitudDni - 1);
     }
     
     private Boolean checkLetraValida() {
